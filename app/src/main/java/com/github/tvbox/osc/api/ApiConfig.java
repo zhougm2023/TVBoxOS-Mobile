@@ -128,7 +128,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://passport.baidu.com/sys/portraith/item/preview_pp.1.bb5f1695.VTKhBQXdJy3eUfTbpI7Chw");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
